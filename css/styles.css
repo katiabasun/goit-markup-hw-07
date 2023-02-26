@@ -960,6 +960,7 @@ ul {
     letter-spacing: 4%;
     color: #757575;
     display: flex;
+    margin-left: 24px;
 }
 
 .check-text::before {
@@ -974,7 +975,34 @@ ul {
 .input-check:checked + .check-text::before {
     background-color: var(--accent-color);
     border: none;
-    background-image:
+    background-image: url(../images/vector.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.input-check:focus + .check-text::before {
+    border-color: var(--accent-color);
+}
+
+.button-modal {
+    width: 169px;
+    height: 56px;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--regular-text-color);
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    letter-spacing: 4%;
+
+    padding: 16px 32px;
+    gap: 10px;
+    margin: 24px 120px;
+
+    transition-property: var(--background-color);
+    transition-duration: var(--duration);
+    transition-timing-function: var(--cubic);
 }
