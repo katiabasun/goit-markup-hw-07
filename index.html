@@ -256,6 +256,32 @@
           <li class="social-items four-f"><a href="" class="social-link link"></a></li>
         </ul>
       </div>
+
+      <div class="subscribe">
+        <form
+        action="#"
+        class="subs-form"
+        name="subscription"
+        autocomplete="off">
+        <label class="subscribe-label footer-title" for="subscribe__input">Subscribe</label>
+        <div class="subs-input-block">
+          <input
+            class="subscribe-input"
+            type="email"
+            name="email"
+            id="subscribe__input"
+            placeholder="E-mail"
+            required
+          />
+          <button class="btn-subscribe" type="submit">
+            Subscribe
+            <svg class="icon-send">
+              <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
       </div>
     </footer>
 
@@ -320,13 +346,14 @@
 
             <div class="modal-field">
               <input
+              tabindex="0"
               id="policy"
               value="true"
               type="checkbox"
               name="agree"
               class="input-check is-hidden"/>
             <label for="policy" class="check-text">
-              <span class="modal-text" >I accept the terms and conditions of the <a href="#">Privacy Policy</a>
+              <span class="modal-text">I accept the terms and conditions of the <a href="#" tabindex="1">Privacy Policy</a>
               </span>
             </label>
             </div>
